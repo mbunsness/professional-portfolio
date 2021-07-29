@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Box Styling</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Matt Bunsness</h1>
+    <p>
+      Portfolio
+      <img src="./assets/images/myHeadshot.jpg" alt="My Headshot" />
+    </p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <button><a href="#">Projects</a></button>
+    <button><a href="#">Contacts</a></button>
+    <button><a href="#">Resume</a></button>
+    <button><a href="#">Bio</a></button>
+  </nav>
+
+  <!-- Body -->
+  <main>
+    <!--Highlight Project, other Projects, Contact, Resume, Bio-->
+    <article class="Projects">
+      <section class="Highlight card">
+        <header>Interactive LED Cube Guest List</header>
+        <img src="./assets/images/ledCube.jpg" alt="LED Cube" />
+        <p>LED cubes are cool. But an interactive LED cube where guests who visit this website choose the colors.</p>
+      </section>
+      <section class="Projects card">
+        <header>mcSquares on Shark Tank!</header>
+        <img src="./assets/images/sharkTank.jpg" alt="Shark Tank image" />
+        <p>I worked for mcSquares when it was featured on Shark Tank and out company recieved a deal from shark Kevin O'Leary.</p>
+      </section>
+      <section class="Projects card">
+        <header>FSAE Racing</header>
+        <img src="./assets/images/carPictureFSAE.jpg" alt="Formula SAE Racecar" />
+        <p>Formula SAE is a racing event put on by the Society of Automotive Engineers challenging students to design, manufacture, and race a car.</p>
+      </section>
+      <section class="Projects card">
+        <header>Internet of Things Blinking LED using ES8266</header>
+        <img src="./assets/images/esp8266.jpg" alt="ESP 8266" />
+        <p>Project based on a arduino and an ESP 8266 wifi module to create the "Hello World" of electronics, a blinking LED!</p>
+      </section>
+    </article>
+    <article class="Resume">
+        <h1>
+            <a href=./assets/resume.pdf alt="My Resume" target="+blank">PDF of my Resume</a>
+        </h1>
+    </article>
+    <article class="contactInfo">
+        <h1>
+            Matt Bunsness
+        </h1>
+        <h1>
+            303-907-9964
+        </h1>
+        <h1>
+            mbunsness@gmail.com
+        </h1>
+    </article>
+  </main>
+
+  <!-- aside -->
+  <aside>
+    <h3>
+      Check out my Social Media
+    </h3>
+</aside> 
+
+  <!-- Footer -->
+  <footer>
+    <h3>
+      Made by Matt Bunsness and updated 7/28/21
+    </h3>
+  </footer>
+</body>
+
+</html>
