@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>CSS Box Styling</title>
+  <title>Matt Bunsness' Professional Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./assets/style.css" />
@@ -10,78 +10,78 @@
   <!-- Body -->
 <body>
   <!-- Header -->
-  <header>
-    <h1>Matt Bunsness</h1>
-    <p>
-      Portfolio
-      <img src="./assets/images/myHeadshot.jpg" alt="My Headshot" />
-    </p>
-  </header>
+    <header>
+        <h1>Matt Bunsness</h1>
+        <p>Welcome to my Professional Portfolio
+        <img class = "headshot" src="./assets/images/myHeadshot.jpg" alt="My Headshot" />
+        </p>
+    </header>
 
   <!-- Navbar -->
-  <nav>
-    <button><a href="#">Projects</a></button>
-    <button><a href="#">Contacts</a></button>
-    <button><a href="#">Resume</a></button>
-    <button><a href="#">Bio</a></button>
-  </nav>
+    <nav>
+        <button><a href="#highlightCard">Projects</a></button>
+        <button><a href="#contactInfo">Contact Me</a></button>
+        <button><a href="#resume">Resume</a></button>
+        <button><a href="#bio">Bio</a></button>
+    </nav>
 
 
-  <main>
-    <!--Highlight Project, other Projects, Contact, Resume, Bio-->
-    <body class="Projects">
-      <article class="highlightCard">
-        <h1>Interactive LED Cube Guest List</h1>
-        <img src="./assets/images/ledCube.jpg" alt="LED Cube" />
-        <p>LED cubes are cool. But an interactive LED cube where guests who visit this website choose the colors.</p>
-      </article>
-      <article class="projectsCard">
-        <h1>mcSquares on Shark Tank!</h1>
-        <img src="./assets/images/sharkTank.jpg" alt="Shark Tank image" />
-        <p>I worked for mcSquares when it was featured on Shark Tank and out company recieved a deal from shark Kevin O'Leary.</p>
-      </article>
-      <article class="projectsCard">
-        <h1>FSAE Racing</h1>
-        <img src="./assets/images/carPictureFSAE.jpg" alt="Formula SAE Racecar" />
-        <p>Formula SAE is a racing event put on by the Society of Automotive Engineers challenging students to design, manufacture, and race a car.</p>
-      </article>
-      <article class="Projects card">
-        <h1>Internet of Things Blinking LED using ES8266</h1>
-        <img src="./assets/images/esp8266.jpg" alt="ESP 8266" />
-        <p>Project based on a arduino and an ESP 8266 wifi module to create the "Hello World" of electronics, a blinking LED!</p>
-      </article>
-      <section class="Resume">
-        <h1>
-            <a href=./assets/resume.pdf alt="My Resume" target="+blank">PDF of my Resume</a>
-        </h1>
-      </section>
-      <section class="contactInfo">
-        <h2>Contact Info:</h2>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/matthewbunsness/" alt="Link to my LinkedIn" target="_blank">Message me on Linkedin</a></li>
-          <li>303-907-9964</li>
-          <li>mbunsness@gmail.com</li>
-        </ul>
-  <!-- aside -->
-  <aside>
-    <h3>
-      Check out my Social Media
-    </h3>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/matthewbunsness/" alt="Link to my LinkedIn" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/mbunsness/" alt="Link to my LinkedIn" target="_blank">Instagram</a></li>
-        <li><a href="https://twitter.com/mbunsness" alt="Link to my LinkedIn" target="_blank">Twitter</a></li>
-        <li><a href="https://www.facebook.com/mbunsness/" alt="Link to my LinkedIn" target="_blank">Facebook</a></li>     
-        
-    </ul>
-</aside> 
-</body>
-  <!-- Footer -->
-  <footer>
-    <h3>
-      Made by Matt Bunsness and updated 7/28/21
-    </h3>
-  </footer>
-
-</main>
+    <main>
+        <!--Highlight Project, other Projects, Contact, Resume, Bio-->
+        <body class="Projects">
+            <article class="highlightCard" id ="highlightCard">
+                <h1>Code Refactor Project</h1>
+                <img src="./assets/images/ledCube.jpg" alt="LED Cube" />
+                <p>Programed a code refactor for class</p>
+                <a href="https://github.com/mbunsness/code-refactor" alt="code-refactor git repo" target="_blank">Code Refactor Repo</a>
+            </article>
+            <section class = "smallCards"></section>
+                <article class="projectsCard">
+                    <h1>mcSquares on Shark Tank!</h1>
+                    <img src="./assets/images/sharkTank.jpg" alt="Shark Tank image" />
+                    <p>I worked for mcSquares when it was featured on Shark Tank and out company recieved a deal from shark Kevin O'Leary.</p>
+                </article>
+                <article class="projectsCard">
+                    <h1>FSAE Racing</h1>
+                    <img src="./assets/images/carPictureFSAE.jpg" alt="Formula SAE Racecar" />
+                    <p>Formula SAE is a racing event put on by the Society of Automotive Engineers challenging students to design, manufacture, and race a car.</p>
+                </article>
+                <article class="projectsCard">
+                    <h1>Internet of Things Blinking LED using ES8266</h1>
+                    <img src="./assets/images/esp8266.jpg" alt="ESP 8266" />
+                    <p>Project based on a arduino and an ESP 8266 wifi module to create the "Hello World" of electronics, a blinking LED!</p>
+                </article>
+            </section>
+            <section class="bio" id = "bio">
+                <h1>About me:</h1>
+                <p>Inventive mechanical engineer and design nerd. When change is the only constant, I am at my best. I use my technical ability and intuition to create elegant design solutions. I thrive in collaborative environments, working with and for others. I am not afraid to rely on the expertise of colleagues to get the job done. I’m committed to earning the respect and trust of coworkers, leading by example, and using compassion based management to accomplish our common goals.</p>
+            </section>
+            <section class="resume" id = "resume">
+                <h1>
+                <a href=./assets/resume.pdf alt="My Resume" target="+blank">PDF of my Resume</a>
+                </h1>
+            </section>
+            <section class="contactInfo" id = "contactInfo">
+                <h2>Contact Info:</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matthewbunsness/" alt="Link to my LinkedIn" target="_blank">Message me on Linkedin</a></li>
+                    <li>303-907-9964</li>
+                    <li>mbunsness@gmail.com</li>
+                </ul>
+        </body>
+    <!-- aside -->
+        <aside>
+            <h3>Check out my Social Media</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/matthewbunsness/" alt="Link to my LinkedIn" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/mbunsness/" alt="Link to my LinkedIn" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/mbunsness" alt="Link to my LinkedIn" target="_blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com/mbunsness/" alt="Link to my LinkedIn" target="_blank">Facebook</a></li>     
+            </ul>
+        </aside> 
+    </main>
+    <!-- Footer -->
+    <footer>
+        <h4>Made by Matt Bunsness and updated 7/28/21</h4>
+    </footer>
 </html>
